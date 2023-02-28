@@ -18,13 +18,13 @@ function createBoxes(amount) {
     box.style.backgroundColor = getRandomHexColor();
     boxesContainer.appendChild(box);
   }
-}
+};
 
 function destroyBoxes() {
   while (boxesContainer.firstChild) {
     boxesContainer.removeChild(boxesContainer.firstChild);
   }
-}
+};
 
 createBtn.addEventListener('click', () => {
   let amount = input.value;
